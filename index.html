@@ -919,6 +919,7 @@
         }
 
         .vinyl-record-box::before {
+
             content: '';
             position: absolute;
             width: 130px; height: 130px;
@@ -933,12 +934,26 @@
             object-fit: cover;
             border: 2px solid #fff;
         }
+.vinyl-heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
 
         /* 마우스 호버 시 레코드판 부드럽게 무한 회전하는 효과 */
-        .music-card:hover .vinyl-record-box {
-            animation: vinylSpin 3.5s linear infinite;
-        }
+ .music-card:hover .vinyl-record-box {
+    animation: vinylSpin 3.5s linear infinite;
+}
 
+.music-card:hover .vinyl-heart {
+    opacity: 1;
+}
         @keyframes vinylSpin {
             100% { transform: rotate(360deg); }
         }
@@ -1962,9 +1977,29 @@
         </div>
 
    
+        <div class="drink-intro-box card">
+            <div class="drink-title">🥤 도은이가 카페에서 제일 사랑하는 최애 음료수들!</div>
+            <div class="drink-list">
+                <div class="drink-item">
+                    <div class="drink-emoji">🧋</div>
+                    <div class="drink-name">흑당버블밀크티</div>
+                </div>
+                <div class="drink-item">
+                    <div class="drink-emoji">🍓</div>
+                    <div class="drink-name">딸기라떼</div>
+                </div>
+                <div class="drink-item">
+                    <div class="drink-emoji">🫐</div>
+                    <div class="drink-name">블루베리스무디</div>
+                </div>
+            </div>
+        </div>
+
 <div class="music-intro-box card">
     <div class="music-box-title">
-        🎵 도은이가 하루 종일 귀에 달고 사는 최애 인생 노래들!
+        
+
+🎵 도은이가 하루 종일 귀에 달고 사는 최애 인생 노래들!
       
     </div>
 
@@ -2004,23 +2039,7 @@
     </div>
 </div>
 
-        <div class="drink-intro-box card">
-            <div class="drink-title">🥤 도은이가 카페에서 제일 사랑하는 최애 음료수들!</div>
-            <div class="drink-list">
-                <div class="drink-item">
-                    <div class="drink-emoji">🧋</div>
-                    <div class="drink-name">흑당버블밀크티</div>
-                </div>
-                <div class="drink-item">
-                    <div class="drink-emoji">🍓</div>
-                    <div class="drink-name">딸기라떼</div>
-                </div>
-                <div class="drink-item">
-                    <div class="drink-emoji">🫐</div>
-                    <div class="drink-name">블루베리스무디</div>
-                </div>
-            </div>
-        </div>
+
 
         <div class="recommend-songs-container-box card">
             <div class="recommend-main-title">✨ 도은이의 추천 곡 보관함 ✨</div>
@@ -2192,7 +2211,7 @@
                     </div>
                     <div class="song-card-item">
                         <div class="album-cover-frame">
-                            <img src="https://i1.sndcdn.com/artworks-000242575721-7fl6ss-large.jpg" class="album-cover-img" alt="사랑해">
+                            <img src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/863/689/81863689_1611559174498_1_600x600.JPG" class="album-cover-img" alt="사랑해">
                         </div>
                         <div class="song-details-right-zone">
                             <div class="song-card-title">사랑해</div>
